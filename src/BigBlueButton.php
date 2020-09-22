@@ -451,7 +451,7 @@ class BigBlueButton
             if (!$ch) {
                 throw new \RuntimeException('Unhandled curl error: ' . curl_error($ch));
             }
-            $timeout = 10;
+            $timeout = 1;
 
             // Needed to store the JSESSIONID
             $cookiefile     = tmpfile();
